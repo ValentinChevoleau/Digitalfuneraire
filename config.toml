@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = ""
 languageCode = "fr-fr"
 title = "Digital Funéraire"
 theme = "perso"
