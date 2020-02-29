@@ -1,0 +1,4 @@
+baseURL = "http://example.org/"
+languageCode = "fr-fr"
+title = "Digital Funéraire"
+theme = "perso"

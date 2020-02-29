@@ -1,0 +1,19 @@
+<!--<head>
+    {{ $style := resources.Get "css/main.scss" | toCSS |   minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen" async>
+
+</head> -->
+
+<!-- postCSS (dict "config" (.Scratch.Get "config") "noMap" true) |  -->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- appel du css avec bulma framework via npm -->
+    {{ $style := resources.Get "css/main.scss" | toCSS |   minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen" async>
+
+</head>
