@@ -1,20 +1,12 @@
-    <!-- hero -->
-    <section class="hero is-info is-medium">
-        <div class="hero-body primary">
-            <div class="container has-text-centered">
-                <br>
-                <h1 class="title is-size-1">
-                    {{ if eq .Type "tags" }}
-                    #{{ .Title }}
-                    {{ else if eq .Type "archives" }}
-                    Archive {{ .Title }}
-                    {{ else }}
-                    {{ .Title }}
-                    {{ end }}
-                </h1>
-                {{ if eq .Type "article" }}
-                {{ .Date.Format "January 2, 2006" }} &middot;&nbsp;{{ .ReadingTime }} min read
-                {{ end }}
-            </div>
+<section class="hero is-success is-fullheight">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                Fullheight title
+            </h1>
+            <h2 class="subtitle">
+                Fullheight subtitle
+            </h2>
         </div>
-    </section>
+    </div>
+</section>

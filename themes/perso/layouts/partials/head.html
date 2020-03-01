@@ -13,8 +13,10 @@
     <title>{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- appel du css avec bulma framework via npm -->
-    {{ $style := resources.Get "css/main.scss" | toCSS  | postCSS | resources.Minify | fingerprint }}
+    {{ $style := resources.Get "css/main.scss" | toCSS  | postCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" emotion="🤩">
+    <!-- appel du css avec bulma framework via npm -->
+    <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
 
 
 </head>
