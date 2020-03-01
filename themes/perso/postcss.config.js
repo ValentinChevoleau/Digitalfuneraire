@@ -1,16 +1,12 @@
-const purgecss = require('postcss-purgecss')
-const autoprefixer = require('autoprefixer')
 module.exports = {
-    plugins: [
-        purgecss({
-            content: [
-                'layouts/**/*.html'
+    plugins: {
+        '@fullhuman/postcss-purgecss': {
+            content: ['themes/perso/layouts/**/*.html'],
+            whitelist: [
+
             ]
-        }),
-        autoprefixer({
-            browsers: [
-                ''
-            ]
-        })
-    ]
-}
+        },
+        autoprefixer: {},
+
+    }
+};

@@ -4,7 +4,7 @@
 
 </head> -->
 
-<!-- postCSS (dict "config" (.Scratch.Get "config") "noMap" true) |  -->
+<!-- postCSS  -->
 
 
 <head>
@@ -13,7 +13,7 @@
     <title>{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- appel du css avec bulma framework via npm -->
-    {{ $style := resources.Get "css/main.scss" | toCSS |   minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen" async>
+    {{ $style := resources.Get "css/main.scss" | toCSS  | postCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" emotion="🤩">
 
 </head>

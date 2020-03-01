@@ -9,10 +9,10 @@
   "author": "Valentin",
   "license": "MIT",
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
     "autoprefixer": "^9.7.4",
     "bulma": "^0.8.0",
     "postcss-cli": "^7.1.0",
-    "postcss-purgecss": "^2.0.3",
     "purgecss": "^2.1.0"
   }
 }
