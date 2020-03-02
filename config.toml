@@ -8,14 +8,26 @@ theme = "perso"
 
   [[menu.main]]
     identifier = "home"
-    name = "about hugo"
-    pre = "<i class='fa fa-heart'></i>"
+    title = "home"
+    name = ""
+    pre = "<i class='fas fa-home'></i>"
     url = "/index.html/"
     weight = 1
 
   [[menu.main]]
-    name = "started"
-    post = "<span class='alert'>New!</span>"
-    pre = "<i class='fa fa-road'></i>"
+    identifier = "a propos"
+    name = "a propos"
+    url = "#"
+    weight = 4
+
+      [[menu.main]]
+    identifier = "Produits"
+    name = "Produits"
     url = "#"
     weight = 2
+
+      [[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    url = "#"
+    weight = 3
