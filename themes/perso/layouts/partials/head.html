@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}" emotion="🤩">
 
     <!-- balise META -->
-    <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+    <meta name="description"
+        content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+    {{ with .Site.Params.author }}
+    <meta name="author" content="{{ . }}">{{ end }}
     <!-- favicone -->
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
