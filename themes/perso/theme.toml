@@ -4,15 +4,15 @@
 name = "Perso"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
+description = "Theme Digital funéraire"
 homepage = "http://example.com/"
-tags = []
+tags = [hugo, bulma, responsive]
 features = []
 min_version = "0.41"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Valentin chevoleau"
+  homepage = "https://perceptiondigitale.fr"
 
 # If porting an existing theme
 [original]
