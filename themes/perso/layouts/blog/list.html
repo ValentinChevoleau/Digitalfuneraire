@@ -6,21 +6,28 @@
 <body>
 
 
+    <div class="container is-fluid">
 
-
-
-    <main>
-        <h1>Mon blog moche</h1>
-        {{ range .Data.Pages }}
-        <header>
-            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-        </header>
-        <article>
-            {{ .Summary }}
-        </article>
-        {{ end}}
-    </main>
-
-
+        <section class="section">
+            <div class="container">
+                <h2 class="title has-text-centered">{{ .Title }}</h2>
+                <div class="columns">
+                    {{ range .Data.Pages }}
+                    <div class="column">
+                        <div class="card" style="height: 100%">
+                            <div class="card-image"><a href="#"><img
+                                        src="https://bulma.dev/placeholder/pictures/bg_4-3.svg?primary=00d1b2"
+                                        alt=""></a></div>
+                            <div class="card-content"><span class="is-size-7">25 Jun 2019</span>
+                                <p class="has-text-justify"> {{ .Summary }}
+                                </p><a class="button is-primary" href="{{ .RelPermalink }}">Read more</a>
+                            </div>
+                        </div>
+                    </div> {{ end}}
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
 
     {{ partial "footer.html" . }}
