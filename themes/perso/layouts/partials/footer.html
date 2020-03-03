@@ -45,15 +45,15 @@
                     </div>
                 </div>
                 <div class="column is-5 is-offset-1">
-                    <form>
+                    <form name="contact" method="POST" data-netlify="true">
                         <div class="field">
                             <div class="control">
-                                <input class="input" type="email" placeholder="Email">
+                                <input class="input" name="mail" type="email" placeholder="Email">
                             </div>
                         </div>
                         <div class="field">
                             <div class="select is-fullwidth">
-                                <select>
+                                <select name="type">
                                     <option disabled selected>Type de demande</option>
                                     <option>SITE WEB</option>
                                     <option>Product 2</option>
@@ -63,7 +63,8 @@
                         </div>
                         <div class="field">
                             <div class="control">
-                                <textarea class="textarea" rows="5" placeholder="Votre message ...."></textarea>
+                                <textarea name="message" class="textarea" rows="5"
+                                    placeholder="Votre message ...."></textarea>
                             </div>
                         </div>
                         <div class="field">
