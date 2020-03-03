@@ -1,5 +1,7 @@
 baseURL = ""
 languageCode = "fr-fr"
+DefaultContentLanguage = "fr"
+lang = "fr"
 title = "Digital Funéraire"
 theme = "perso"
 
