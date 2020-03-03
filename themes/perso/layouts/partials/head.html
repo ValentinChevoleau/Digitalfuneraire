@@ -1,29 +1,31 @@
-    <head>
-        <meta charset="utf-8">
-        <title>{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}</title>
+<html lang='{{ .Site.Language.Lang }}'>
 
-        <!-- balise META -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description"
-            content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+<head>
+    <meta charset="utf-8">
+    <title>{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}</title>
 
-        <meta name="author" content="{{ .Params.author }} ">
+    <!-- balise META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
 
-        <!--{{ with .Site.Params.author }}
+    <meta name="author" content="{{ .Params.author }} ">
+
+    <!--{{ with .Site.Params.author }}
     <meta name="author" content="{{ . }}">{{ end }} 
     chercher la différence entre les 2 je pense que sait soit l'info de config.toml 
     et l'autre l'info de l'archetype je pourrais faire un if else dessus pour le blog -->
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- favicone -->
-        <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-        <!-- appel du css avec bulma framework via npm -->
-        {{ $style := resources.Get "css/main.scss" | toCSS  | postCSS | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $style.Permalink }}" emotion="🤩">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- favicone -->
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <!-- appel du css avec bulma framework via npm -->
+    {{ $style := resources.Get "css/main.scss" | toCSS  | postCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" emotion="🤩">
 
 
-        <!-- SEO -->
-        {{- partial "seo.html" . -}}
+    <!-- SEO -->
+    {{- partial "seo.html" . -}}
 
 
-    </head>
+</head>

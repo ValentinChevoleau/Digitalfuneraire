@@ -1,20 +1,14 @@
-{{ if in (.Site.BaseURL | string) "www.example.com" }}
-<script>
-    (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-XXXX');
-</script>
-{{ end }}
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-XYSYXYSY-X']);
+    _gaq.push(['_trackPageview']);
 
-<!-- remplacer l'url et le code de suivi excuter un stysteme de demande à l'utilisateur pour le RGPD -->
+    (function () {
+        var ga = document.createElement('script');
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+            'http://www') + '.google-analytics.com/ga.js';
+        ga.setAttribute('async', 'true');
+        document.documentElement.firstChild.appendChild(ga);
+    })();
+</script>
+<!-- element de la doc officiel hugo remplacer  code de suivi excuter un stysteme de demande à l'utilisateur pour le RGPD -->
