@@ -1,0 +1,15 @@
+<body>
+
+    <section class=" section  hero">
+        <header>
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title is-1"> <a class="title is-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </h1>
+                    <p class="meta">{{ .Date.Format "02/01/2006" }}</p>
+
+                    <h2 class="subtitle is-3">
+                        {{ .Slug }} </h2>
+                </div>
+            </div>
+        </header>
