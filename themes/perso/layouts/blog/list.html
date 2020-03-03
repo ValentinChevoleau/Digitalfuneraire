@@ -4,6 +4,11 @@
 {{ partial "nav.html" . }}
 
 <body>
+
+
+
+
+
     <main>
         <h1>Mon blog moche</h1>
         {{ range .Data.Pages }}
@@ -15,4 +20,7 @@
         </article>
         {{ end}}
     </main>
+
+
+
     {{ partial "footer.html" . }}
