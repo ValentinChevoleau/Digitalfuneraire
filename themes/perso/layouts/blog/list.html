@@ -10,7 +10,7 @@
 
         <section class="section">
             <div class="container">
-                <h2 class="title has-text-centered">{{ .Title }}</h2>
+
                 <div class="columns">
                     {{ range .Data.Pages }}
                     <div class="column">
@@ -18,9 +18,10 @@
                             <div class="card-image"><a href="#"><img
                                         src="https://bulma.dev/placeholder/pictures/bg_4-3.svg?primary=00d1b2"
                                         alt=""></a></div>
+                            <h2 class="title has-text-centered is-6"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
                             <div class="card-content"><span class="is-size-7">25 Jun 2019</span>
                                 <p class=" has-text-justified"> {{ .Summary }}
-                                </p><br><a class="button is-primary" href="{{ .RelPermalink }}">Read more</a>
+                                </p><br><a class="button is-primary" href="{{ .RelPermalink }}">Lire</a>
                             </div>
                         </div>
                     </div> {{ end}}
