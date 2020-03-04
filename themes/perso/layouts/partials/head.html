@@ -20,9 +20,9 @@
     <!-- favicone -->
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <!-- appel du css avec bulma framework via npm -->
-    {{ $style := resources.Get "css/main.scss" | toCSS  | postCSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" emotion="🤩">
 
+    {{ $style := resources.Get "css/main.scss" | toCSS }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" emotion="🤩">
 
     <!-- SEO -->
     {{- partial "seo.html" . -}}

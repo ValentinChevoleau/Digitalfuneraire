@@ -5,6 +5,8 @@ Author: "Valentin"
 description: "test"
 slug: "2er article du blog de mimiche"
 title: "2 hello le premier poste de tintinou"
+tags: [tag1, tag]
+Categories: [cat1, cat2]
 ---
 # hello world 2! 
 
