@@ -6,7 +6,7 @@
 ### Idée du projet
 
 - Création du template avec Bulma Framework 
-- Gestion du poids du fichier css via purgeCss ( en cours de debug :( )
+- Gestion du poids du fichier css via purgeCss ( A ne pas faire lors du DEV )
 - Découpe des partials pour création du template HUGO 
 - 
 **************
@@ -17,6 +17,12 @@
 - Visioacode for mac
 - Fontawesome 5 via CDN (Attention format .svg )
 - Netlify pour l'hebergement 
+- PureCSS + PurgeCSS + Prefixer + minify
+
+## A intégrer ou pas... 
+
+> PartialsCached
+> 
 
 
 ## Documentations (au cas ou)
@@ -27,7 +33,7 @@
  -  https://bulmajs.tomerbe.co.uk/
  -  https://wikiki.github.io/
  -  https://creativebulma.net/ (no free)
-* Exemple : https://aldi.github.io/awesome-bulma-templates/
+    * Exemple : https://aldi.github.io/awesome-bulma-templates/
  - https://scrimba.com/g/gbulma
 
 

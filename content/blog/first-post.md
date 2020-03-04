@@ -7,6 +7,8 @@ slug: "1er article du blog de mimiche"
 title: "hello le premier poste de tintinou"
 tags: [tag1, tag]
 Categories: [cat1, cat2]
+image: "data/image.jpg"
+image2: "data/image2.jpg"
 ---
 # hello world ! 
 
