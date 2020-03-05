@@ -20,7 +20,7 @@ summaryLength = "10"
       [[menu.main]]
     identifier = "infos"
     name = "infos"
-    url = "infos.html/"
+    url = "/infos.html/"
     weight = 4
 
       [[menu.main]]
