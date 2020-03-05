@@ -1,10 +1,10 @@
 ---
-publishDate: "{{ .Date }}"
+publishDate: "{{.Date}}"
 draft: "false"
-Author: "Valentin"
+author: "Valentin"
 description: "test"
-slug: "3er article du blog de mimiche"
-title: "3 hello le premier poste de tintinou"
+slug: "Article C"
+title: "Article 3"
 tags: [tag1, tag]
 Categories: [cat1, cat2]
 ---

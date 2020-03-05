@@ -28,14 +28,21 @@
             </div>
         </div>
         <div class="tile is-parent">
-            <article class="tile is-child notification ">
-                <div class="content">
-                    <p class="is-small">Liens utiles</p>
-                    <div class="content">
+            <article class="tile is-child notification message">
+                    <div class="content message-body">
+                            <h4>Articles en relations</h4>
                         <!-- Contentenu futuremenu de blog -->
-
+                        
+                        {{ $related := .Site.RegularPages.Related . | first 5 }}
+                        {{ with $related }}
+                        <p>
+                            {{ range . }}
+                            <a href="{{ .RelPermalink }}">  {{ .Title }} </a></br>
+                            {{ end }}
+                        </p>
+                        {{ end }}
                     </div>
-                </div>
+                
             </article>
 
         </div>
