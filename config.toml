@@ -21,7 +21,7 @@ summaryLength = "10"
       [[menu.main]]
     identifier = "test"
     name = "test"
-    url = "/infos.html/"
+    url = "nous.html"
     weight = 4
 
       [[menu.main]]
@@ -35,3 +35,11 @@ summaryLength = "10"
     name = "blog"
     url = "/blog/"
     weight = 3
+
+
+      [[menu.main]]
+  identifier = "Archive"
+    parent = "blog"
+    name = "Archive"
+    url = "/Archive/"
+    weight = 10

@@ -44,3 +44,13 @@
 ### Divers 
 
 - https://realfavicongenerator.net/
+
+### HUGO
+
+#### Docs complete
+                     :https://bwaycer.github.io/hugo_tutorial.hugo/extras/menus/
+
+#### les menus : 
+                     https://doc.huc.fr.eu.org/fr/web/hugo/hugo-menu-nav/
+                     https://www.youtube.com/watch?v=E6bhmixcR5k 
+

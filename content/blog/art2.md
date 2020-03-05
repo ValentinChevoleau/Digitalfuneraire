@@ -1,6 +1,7 @@
 ---
 draft: false 
-date: '{{.Date}}'
+date: '2016-12-14T21:27:05.454Z'
+publishdate: '2016-12-14T21:27:05.454Z'
 Author: Valentin .C
 description: test de description
 title: Deep dive into TOML, JSON and YAML

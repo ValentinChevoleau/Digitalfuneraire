@@ -1,6 +1,7 @@
 ---
 draft: false 
-date: '{{.Date}}'
+date: ''
+publishdate: ''
 Author: Valentin .C
 description: test de description
 title: Deep dive into TOML, JSON and YAML

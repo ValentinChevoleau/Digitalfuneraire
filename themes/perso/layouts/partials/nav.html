@@ -13,16 +13,10 @@
   <div id="navbarBasicExample" class="navbar-menu">
 
     <div class="navbar-start">
-      {{ $currentPage := . }}  {{ range .Site.Menus.main }}
-
+      {{ range .Site.Menus.main }}
+      {{ $text := print .Name | safeHTML }}
       <a class="navbar-item" href="{{ .URL }}" title="{{ .Title }}">
-        {{- .Pre  -}} {{- .Name -}}
-        {{- with .Page -}}
-        <span class="date">
-          {{- dateFormat " (2006-01-02)" .Date -}}
-        </span>
-        {{- end -}}
-      </a>
+        {{.Pre}} {{ $text }} {{.Post}}</a>
       {{ end }}</div>
   </div>
   </div>
