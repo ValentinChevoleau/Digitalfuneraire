@@ -60,13 +60,16 @@
         </div>
 
     </div>
-    <div class="columns">
-        <div class="column is-half is-offset-one-quarter"> {{ if .PrevInSection }}
-            <a href="{{ .PrevInSection.RelPermalink }}"> <button
-                    class="button is-focused is-primary ">Precedent</button></a>{{ end }}
-            {{ if .NextInSection }}
-            <a href="{{ .NextInSection.RelPermalink }}"> <button class="button is-focused is-primary">
-                    Suivant</button></a>{{ end }}
+    <div class="columns is-centered">
+        <div class="column  ">
+            {{ if .PrevInSection }}
+            <a href="{{ .PrevInSection.RelPermalink }}"> <button class="button  is-small is-left inverted is-primary ">
+                    <span class="icon is-small">
+                        <i class="fas fa-angle-left"></i>
+                    </span> </button></a>{{ end }}</div>
+        <div class="column "> {{ if .NextInSection }}
+            <a href="{{ .NextInSection.RelPermalink }}"> <button class="button is-small is-right inverted is-primary">
+                    <i class="fas fa-angle-right"></i> </button></a>{{ end }}
 
         </div>
     </div>

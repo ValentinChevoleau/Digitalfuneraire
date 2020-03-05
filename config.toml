@@ -5,7 +5,8 @@ lang = "fr"
 title = "Tintinou"
 theme = "perso"
 summaryLength = "10"
-
+[build]
+  useResourceCacheWhen = "always"
 
 [menu]
 
@@ -18,8 +19,8 @@ summaryLength = "10"
     weight = 1
 
       [[menu.main]]
-    identifier = "infos"
-    name = "infos"
+    identifier = "test"
+    name = "test"
     url = "/infos.html/"
     weight = 4
 
