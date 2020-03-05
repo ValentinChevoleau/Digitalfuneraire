@@ -1,7 +1,7 @@
-# Digital-funeraire => [![Netlify Status](https://api.netlify.com/api/v1/badges/676e6c6d-51f0-4726-b538-45eff2162bb3/deploy-status)](https://app.netlify.com/sites/epic-euler-e44a74/deploys)
+#  => [![Netlify Status](https://api.netlify.com/api/v1/badges/676e6c6d-51f0-4726-b538-45eff2162bb3/deploy-status)](https://app.netlify.com/sites/epic-euler-e44a74/deploys)
 
 
-## site static digital funeraire
+## site static 
 
 ### Idée du projet
 
@@ -49,6 +49,7 @@
 
 #### Docs complete
                      :https://bwaycer.github.io/hugo_tutorial.hugo/extras/menus/
+                     
 
 #### les menus : 
                      https://doc.huc.fr.eu.org/fr/web/hugo/hugo-menu-nav/
