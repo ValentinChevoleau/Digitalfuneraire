@@ -11,9 +11,19 @@
                     <div class="tile is-child notification ">
                         <h1 class="title is-1 has-text-centered"> <a chref="{{ .RelPermalink }}">{{ .Title }}</a>
                         </h1>
-                        <div class="block has-text-right "><small class="is-size-7"> {{ dateFormat "2 January, 2006" .Date }} <br>
-                                Durée du
-                                plasir : {{ math.Round (div (countwords .Content) 220.0) }} minutes.
+                        <div class="block has-text-right"><small> {{ if ne .Site.Params.hide_author true }}
+                                {{ with .Params.author }}
+                                <div itemprop="author">{{ index . }}</div>
+                                {{ else }}
+                                <div itemprop="author"> {{ .Site.Params.author }}</div> <br>
+                                {{ end }}
+                                {{ end }} Le <time
+                                    datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "2 Jan, 2006" }}</time>
+                                <br>
+                        </div>
+                        </small>
+                        <div class="has-text-left">Durée du plasir : {{ math.Round (div (countwords .Content) 220.0) }}
+                            minutes.
                             </small>
                         </div>
                         <!-- tag et categorie-->
