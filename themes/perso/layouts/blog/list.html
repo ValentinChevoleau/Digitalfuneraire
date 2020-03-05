@@ -18,7 +18,8 @@
                 <div class="card" style="height: 100%">
                   <div class="card-image"><a href="#"><img src="https://bulma.dev/placeholder/pictures/bg_4-3.svg?primary=00d1b2" alt=""></a></div>
                   <div class="card-content">
-                    <div class="block"><small class="is-size-7"> Date | Bloggeur </small></div>
+                    <div class="block"><small class="is-size-7"> {{ dateFormat "2 January, 2006" .Date }}
+                     </small></div>
                     <h5 class="title is-6"><a href="{{ .RelPermalink }}">{{.Title}}</a></h5>
                     <p> {{ .Summary }}</p><br>
                     <div class="buttons is-centered"><a class="button is-primary" href="{{ .RelPermalink }}">Lire</a></div>

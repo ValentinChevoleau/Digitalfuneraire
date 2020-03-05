@@ -11,9 +11,11 @@
                     <div class="tile is-child notification ">
                         <h1 class="title is-1 has-text-centered"> <a chref="{{ .RelPermalink }}">{{ .Title }}</a>
                         </h1>
-                        <p class="meta has-text-right is-small content">Date: 03/2020 <br>
-                            Durée du plasir : {{ math.Round (div (countwords .Content) 220.0) }} minutes.
-                        </p>
+                        <div class="block has-text-right "><small class="is-size-7"> {{ dateFormat "2 January, 2006" .Date }} <br>
+                                Durée du
+                                plasir : {{ math.Round (div (countwords .Content) 220.0) }} minutes.
+                            </small>
+                        </div>
                         <!-- tag et categorie-->
 
                     </div>
@@ -29,20 +31,20 @@
         </div>
         <div class="tile is-parent">
             <article class="tile is-child notification message">
-                    <div class="content message-body">
-                            <h4>Articles en relations</h4>
-                        <!-- Contentenu futuremenu de blog -->
-                        
-                        {{ $related := .Site.RegularPages.Related . | first 5 }}
-                        {{ with $related }}
-                        <p>
-                            {{ range . }}
-                            <a href="{{ .RelPermalink }}">  {{ .Title }} </a></br>
-                            {{ end }}
-                        </p>
+                <div class="content message-body">
+                    <h4>Articles en relations</h4>
+                    <!-- Contentenu futuremenu de blog -->
+
+                    {{ $related := .Site.RegularPages.Related . | first 5 }}
+                    {{ with $related }}
+                    <p>
+                        {{ range . }}
+                        <a href="{{ .RelPermalink }}"> {{ .Title }} </a></br>
                         {{ end }}
-                    </div>
-                
+                    </p>
+                    {{ end }}
+                </div>
+
             </article>
 
         </div>

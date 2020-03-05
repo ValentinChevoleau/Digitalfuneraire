@@ -17,16 +17,16 @@ summaryLength = "10"
     url = "/index.html/"
     weight = 1
 
-  [[menu.main]]
-    identifier = "a propos"
-    name = "a propos"
-    url = "#"
+      [[menu.main]]
+    identifier = "infos"
+    name = "infos"
+    url = "/infos.html/"
     weight = 4
 
       [[menu.main]]
     identifier = "Produits"
     name = "Produits"
-    url = "#"
+    url = "/index.html/"
     weight = 2
 
       [[menu.main]]
