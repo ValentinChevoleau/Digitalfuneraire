@@ -37,3 +37,10 @@
  - https://scrimba.com/g/gbulma
 
 
+### Markdown
+
+- https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet 
+
+### Divers 
+
+- https://realfavicongenerator.net/

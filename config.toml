@@ -4,6 +4,7 @@ DefaultContentLanguage = "fr"
 lang = "fr"
 title = "Tintinou"
 theme = "perso"
+summaryLength = "10"
 
 
 [menu]

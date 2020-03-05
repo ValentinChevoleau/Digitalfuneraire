@@ -3,13 +3,17 @@ publishDate: "{{ .Date }}"
 draft: "false"
 Author: "Valentin"
 description: "test"
-slug: "1er article du blog de mimiche"
-title: "hello le premier poste de tintinou"
+slug: "2er article du blog de mimiche"
+title: "2 hello le premier poste de tintinou"
 tags: [tag1, tag]
 Categories: [cat1, cat2]
-image: "data/image.jpg"
-image2: "data/image2.jpg"
+resources:
+- name: "featuredImage"
+  match: "/favicon.png"
+  params:
+    description: "test"
 ---
+
 # hello world ! 
 
 
